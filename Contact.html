@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+<header>
+
+    <h1 class="heading">Contact</h1>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="Index.html">home</a></li>
+            <li><a href="AboutMe.html">about</a></li>
+            <li><a href="Project.html">Project</a></li>
+            <li><a href="Contact.html">contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+<!-- header section ends -->
+
+<!-- Contact section starts   -->
+<img src="menu-btn.png" alt="" class="menu-btn">
+    </nav>
+
+    <section class="contact" id="contact">
+        <div class="contact-content">
+            <h2>Contact <span>Me</span></h2>    
+
+            <img class="one" src="images/email.jpg" alt="Email" style="width:42px;height:42px;">
+            <h3>arzyl.manzano001@gmail.com</h3>
+        </br>
+            <a href="https://www.facebook.com/zyl.mercado/"><img class="one" src="images/fb.png" alt="Facebook" style="width:42px;height:42px;"></a>
+            <a href="https://www.instagram.com/zylmanzano"><img class="one" src="images/ig.jpg" alt="Instagram" style="width:42px;height:42px;"></a>
+            <a href="https://discord.gg/arzylmanzano#2967"><img class="one" src="images/discord.png" alt="Discord" style="width:42px;height:42px;"></a>
+            <a href="https://tiktok.com/@zylmanzano"><img class="one" src="images/tiktok.png" alt="Tiktok" style="width:42px;height:42px;"></a>
+
+        </div>
+    </section>
+    <!-- Contact section ends -->
+
+    <script>
+        const menuBtn = document.querySelector ('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click' ,()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+
+    </script>
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="javascript.js"></script>
+
+</body>
+</html>

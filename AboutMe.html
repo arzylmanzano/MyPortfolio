@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+<header>
+
+    <h1 class="heading">About <span>Me</span></h1>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="Index.html">home</a></li>
+            <li><a href="AboutMe.html">about</a></li>
+            <li><a href="Project.html">Project</a></li>
+            <li><a href="Contact.html">contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+
+<!-- about section start  -->
+<section class="education" id="education">
+
+    <h1 class="heading"> my <span>education</span> </h1>
+    
+    <div class="box-container">
+    
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2019 - Present</span>
+            <h3>Bachelor of Science (B.S.) in Information Technology</h3>
+            <p>STI College Global City</p>
+        </div>
+    
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2017 - 2019</span>
+            <h3>Senior Highschool</h3>
+            <p>Montessori Professional College of Asia</p>
+        </div>
+    
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2013 - 2019</span>
+            <h3>Secondary Education</h3>
+            <p>St. Columban's School, Inc.</p>
+        </div>
+    
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2007 - 2013</span>
+            <h3>Primary Education</h3>
+            <p>St. Columban's School, Inc.</p>
+        </div>
+
+           <a href="pdf/Curriculum Vitae.pdf"><button class="btn">Curriculum Vitae</button></a>
+        
+    </div>
+</section>
+<!-- about section ends -->
+
+<script>
+    const menuBtn = document.querySelector ('.menu-btn')
+    const navlinks = document.querySelector('.nav-links')
+
+    menuBtn.addEventListener('click' ,()=>{
+        navlinks.classList.toggle('mobile-menu')
+    })
+
+</script>
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="javascript.js"></script>
+
+</body>
+</html>

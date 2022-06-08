@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root{
+    --violet:#a914ff;
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline:none;
+    border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background:var(--violet);
+    color:#fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+section{
+    padding:0 7%;
+    padding-top: 12rem;
+}
+/* btn CV */
+.btn{
+    font-size: 2rem;
+    padding:.7rem 3rem;
+    background:#FF0000;
+    color:#fff;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background:#333;
+}
+/* header */
+header{
+    position: fixed;
+    top:0; left: 0;
+    z-index: 1000;
+    background:linear-gradient(to top, #666,#0C090A );
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+    width:100%;
+}
+
+header .heading{
+    font-size: 3rem;
+    color:#fff;
+    padding:1rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
+}
+
+header .heading span{
+    color:#FF0000;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header #menu{
+    font-size: 3rem;
+    color:#666;
+    cursor: pointer;
+    margin:1rem;
+    display: none;
+}
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background:linear-gradient (to left, #666, #0C090A);
+    padding:1rem; 
+}
+
+header .navbar ul li{
+    margin:0 1.5rem;
+}
+
+header .navbar ul li a{
+    font-size: 2rem;
+    color:#fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .navbar ul li a:hover{
+    color:#FF0000;
+}
+
+/*Home*/
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom,#666,#0C090A);
+}
+
+.home .image{
+    flex:1 1 40rem;
+}
+
+.home .image img{
+    width:100%;
+    align-items: center;
+}
+
+.home .content{
+    flex:1 1 40rem;
+}
+
+.home .content h1{
+    font-size: 5rem;
+    color:rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.home .content span{
+    font-family: 'Times New Roman', Times, serif;
+    color: #FF0000;
+}
+
+.home .content p{
+    font-size: 1.8rem;
+    color:#fff;
+    padding:1rem 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Contact*/
+.contact{
+    width: 100vw;
+    height: 100vh;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: linear-gradient(to bottom,#3A3B3C,#0C090A);
+}
+
+.contact h2 span{
+    font-family: 'Times New Roman', Times, serif;
+    color: #FF0000;
+}
+
+.contact .contact-content{
+    margin-bottom: 100px;
+    text-align: center;
+    border-radius: 10px;
+    height: 300px;
+    width: 350px;
+   
+}
+.contact-content h2{
+    margin-bottom: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    font-size: 4rem;
+}
+
+.contact .contact-content h3{
+    color: #fff;
+    font-size: 3.5vmin;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    font-style:normal;
+}
+
+img.one{
+    margin: 6px;
+}
+
+/* About Me*/
+.education{
+    background: linear-gradient(to bottom,#3A3B3C,#0C090A);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.education h1{
+    color:#FF0000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
+}
+
+.education h1 span{
+    color:#fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    padding-left: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.education .box-container .box{
+    width:27rem;
+    margin:4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.education .box-container .box span{
+    font-size: 1.3rem;
+    background:#FF0000;
+    color:#fff;
+    border-radius: 5rem;
+    padding:.5rem 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.education .box-container .box h3{
+    font-size: 2rem;
+    color:#fff;
+    padding-top: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.education .box-container .box p{
+    font-size: 1.4rem;
+    color:#fff;
+    padding: 1rem 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.education .box-container .box i{
+    position: absolute;
+    top:-1.5rem; left:-2.5rem;
+    height:5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color:#fff;
+    background:var(--yellow);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+/* Project */
+.project{
+    background: linear-gradient(to bottom,#3A3B3C,#0C090A);
+}
+
+.project .heading{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    color: #FF0000;
+}
+
+.project .heading span{
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    font-size: 4rem;
+}
+
+.project .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+}
+
+.project .box-container h2{
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.project .box-container .box{
+    height: 25rem;
+    width:30rem;
+    border-radius: 1rem;
+    margin:2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: inherit;
+  
+}
+
+.project .box-container .box:hover img{
+    transform: scale(1.2);
+}
+
+
+
+/* media queries  */
+
+@media (min-width:300px){
+
+    html{
+        font-size: 100%;
+        }
+}
+
+@media (max-width:768px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .home .content{
+        text-align: center;
+    }
+
+    .home .content h1{
+        font-size: 4rem;
+    }
+
+    .about .content h1{
+        font-size: 4rem;
+    }
+
+}
+
+
+@media (max-width:500px){
+
+    html{
+        font-size: 50%;
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:0 1rem;
+    }
+
+    header #menu{
+        display: block;
+        color:#fff;
+    }
+
+    header .navbar{
+        position: fixed;
+        top:6.2rem; right:-120%;
+        height:100%;
+        width:100%;
+        border-top: .2rem solid rgba(0,0,0,.3);
+    }
+
+    header .navbar ul{
+        height:100%;
+        width:100%;
+        flex-flow: column;
+        background: linear-gradient(to bottom,#666,#0C090A);
+        padding-bottom: 15rem;
+        ;
+    }
+
+    header .navbar ul li{
+        text-align: center;
+        width:100%;
+        margin:1rem 0;
+    }
+
+    header .navbar ul li a{
+        font-size: 4rem;
+        color:#fff;
+        display: block;
+    }
+
+    header .navbar ul li a:hover{
+        color:var(--orange);
+    }
+
+    .fa-times{
+        transform: rotate(180deg);
+    }
+
+    header .navbar.nav-toggle{
+        right:0;
+    }
+}
+
